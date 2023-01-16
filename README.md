@@ -8,14 +8,12 @@
 - 6 - subscribe sqs queues(except dead lettter one) to the sns topic
 - 7 - create python script called validator.py that pull messages from one of the sqs queues and download the file from s3 and change the comma separation to new lines<br>
 ```
-
 example:
 original file:mahmoud,ahmed,mohamed
 after change:
 mahmoud
 ahmed
 mohamed
-
 ```
 the script should upload the file again with the same name with  to different folder in s3 bucket
 - 8 - create another python script called metadata.py that pull messages from the other sqs queue and store the file metadata in csv file locally
